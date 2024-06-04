@@ -23,13 +23,7 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
-local Section = Tab:AddSection({
-	Name = "Section"
-})
 
---[[
-Name = <string> - The name of the section.
-]]
 OrionLib:MakeNotification({
 	Name = "Script by",
 	Content = "TranthanhthaiZ",
@@ -43,19 +37,7 @@ Content = <string> - The content of the notification.
 Image = <string> - The icon of the notification.
 Time = <number> - The duration of the notfication.
 ]]
-Tab:AddToggle({
-	Name = "This is a toggle!",
-	Default = false,
-	Callback = function(Value)
-		print(Value)
-	end    
-})
 
---[[
-Name = <string> - The name of the toggle.
-Default = <bool> - The default value of the toggle.
-Callback = <function> - The function of the toggle.
-]]
 Tab:AddButton({
 	Name = "Tiger Admin",
 	Callback = function()
