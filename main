@@ -83,7 +83,7 @@ Callback = <function> - The function of the colorpicker.
 ]]
 ColorPicker:Set(Color3.fromRGB(255,255,255)
 Tab:AddSlider({
-	Name = "Slider",
+	Name = "SpeedHack",
 	Min = 0,
 	Max = 50,
 	Default = 0,
@@ -91,7 +91,7 @@ Tab:AddSlider({
 	Increment = 1,
 	ValueName = "Still in Progress",
 	Callback = function(Value)
-		print(Value)
+		game.Players.LocalPlayer.Character.Humanoid.Walkspeed = Value
 	end    
 })
 
