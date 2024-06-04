@@ -105,25 +105,6 @@ ValueName = <string> - The text after the value number.
 Callback = <function> - The function of the slider.
 ]]
 Slider:Set(2)
-Tab:AddLabel("Label")
-CoolLabel:Set("Label New!")
-Tab:AddParagraph("Paragraph","Paragraph Content")
-CoolParagraph:Set("Paragraph New!", "New Paragraph Content!")
-Tab:AddTextbox({
-	Name = "Progress",
-	Default = "default box input",
-	TextDisappear = true,
-	Callback = function(Value)
-		print(Value)
-	end	  
-})
-
---[[
-Name = <string> - The name of the textbox.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Callback = <function> - The function of the textbox.
-]]
 Tab:AddBind({
 	Name = "Fly Script",
 	Default = Enum.KeyCode.E,
@@ -140,25 +121,8 @@ Hold = <bool> - Makes the bind work like: Holding the key > The bind returns tru
 Callback = <function> - The function of the bind.
 ]]
 Bind:Set(Enum.KeyCode.E)
-Tab:AddDropdown({
-	Name = "Dropdown",
-	Default = "1",
-	Options = {"1", "2"},
-	Callback = function(Value)
-		print(Value)
-	end    
-})
-
---[[
-Name = <string> - The name of the dropdown.
-Default = <string> - The default value of the dropdown.
-Options = <table> - The options in the dropdown.
-Callback = <function> - The function of the dropdown.
-]]
-Dropdown:Refresh(List<table>,true)
-Dropdown:Set("No Option)
 Tab:AddButton({
-	Name = "Close The Script",
+	Name = "Close",
 	Callback = function()
       		OrionLib:Destroy()
   	end    
