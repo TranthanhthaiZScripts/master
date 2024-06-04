@@ -157,7 +157,6 @@ Callback = <function> - The function of the dropdown.
 ]]
 Dropdown:Refresh(List<table>,true)
 Dropdown:Set("No Option)
-OrionLib:Init()
 Tab:AddButton({
 	Name = "Close The Script",
 	Callback = function()
@@ -169,4 +168,5 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+OrionLib:Init()
 end)
